@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include "ArithmeticMean.h"
 #include "Matrix.h"
+#include "ArrayInt.h"
 
 int main()
 {
@@ -21,5 +22,19 @@ int main()
     matrix.mPrint();
     std::cout << "matrix determinant: " << matrix.GetDet() << std::endl;
 
+    size_t arr_size = 10;
+    ArrayInt arr(arr_size);
 
+    auto arr_begin = arr.begin();
+    auto arr_end = arr.end();
+
+    for (; arr_begin != arr_end; ++arr_begin)
+    {
+        *arr_begin = arr_size--;
+    }
+
+    std::cout << "[ ";
+    for (auto n : arr)
+        std::cout << n << " ";
+    std::cout << "]";
 }

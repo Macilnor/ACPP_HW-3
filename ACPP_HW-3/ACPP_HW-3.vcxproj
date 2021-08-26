@@ -140,10 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ACPP_HW-3.cpp" />
+    <ClCompile Include="ArrayInt.cpp" />
     <ClCompile Include="Matrix.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArithmeticMean.h" />
+    <ClInclude Include="ArrayInt.h" />
+    <ClInclude Include="ArrIterator.h" />
     <ClInclude Include="Matrix.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
